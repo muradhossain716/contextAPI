@@ -4,8 +4,9 @@ import ComponentOne from "./Components/contextAPI/ComponentOne";
 
 const AppDataContext=createContext();
 function App() {
+  let a=5;
   return (
-    <AppDataContext.Provider value={'value from app data'}>
+    <AppDataContext.Provider value={a}>
       <ComponentOne />
     </AppDataContext.Provider>
   

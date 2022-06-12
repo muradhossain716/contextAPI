@@ -4,7 +4,7 @@ export default function ComponentThree() {
     const value=useContext(DataContext);
     const{count,handleClick}=value;
   return (<>
-    <h1 onMouseOver={()=>handleClick()}>{count}</h1>
+    <h1 onClick={()=>handleClick()}>{count}</h1>
     </>
   )
 }
